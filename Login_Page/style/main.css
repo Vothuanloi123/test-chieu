@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+.login-form{
+
+}
+.login-form__image{
+    padding: 20px 0;
+    background-color: #EFF1F3;
+}
+.login-form__image img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.login-form__content{
+    background-color: white;
+    padding: 30px 25px;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.login-form__content__title{
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight:700;
+}
+.login-form__content__email,.login-form__content__password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px;
+}
+.login-form__content__email label,.login-form__content__password label{
+    font-size: 16px;
+    font-weight: 600;
+}
+.login-form__content__email input,.login-form__content__password input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.login-form__forget{
+   display: flex;
+   justify-content: flex-end;
+}
+.login-form__forget a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.login-form__btn{
+    padding: 20px;
+    background-color: rgb(34,57,67);
+    color: white;
+    margin-top: 20px;
+    border-radius:30px;
+    font-size:20px;
+    font-weight: 800;
+    text-align: center;
+}
+.login-form__desc{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+.login-form__desc span{
+    background-color: white;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+}
+.login-form__desc:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    left: 50%;
+    top: 50%;
+    margin-top: 2px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.login-form__social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.login-form__social__content{
+    padding: 10px; 
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 4px 8px 4px #cccc;
+}
+.login-form__social__content img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
